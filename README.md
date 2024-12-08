@@ -1,19 +1,53 @@
-# 🎈 Blank app template
+# Cryptanalysis Tool
+An interactive cryptanalysis tool built using Python and Streamlit that allows users to analyze and decrypt ciphertexts encrypted with different classical ciphers. This tool is especially useful for educational purposes, providing both frequency analysis and decryption capabilities.
 
-A simple Streamlit app template for you to modify!
+# Features
+## Supported Ciphers:
+### Caesar Cipher:
+Brute force all possible keys and display decrypted messages.
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+### Affine Cipher:
+1. Perform frequency analysis and display a frequency chart.
 
-### How to run it on your own machine
+2. Use the two most frequent letters to solve equations and determine keys a and b.
 
-1. Install the requirements
+3. Decrypt and display the message with the determined keys.
 
-   ```
-   $ pip install -r requirements.txt
-   ```
+### Monolalphabetic Cipher:
+1. Perform frequency analysis and display a frequency chart.
 
-2. Run the app
+2. Use Chi-square analysis to identify the best possible decryption and display it.
 
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+### Vigenère Cipher:
+1. Perform Kasiski examination to suggest possible key lengths.
+
+2. Allow the user to input a key for decryption and display the decrypted message.
+
+### Playfair Cipher:
+1. Allow the user to input a key and decrypt the message based on the Playfair cipher rules.
+   
+# Installation
+
+## Prerequisites
+1. Ensure you have Python installed (version 3.7 or later). Install Streamlit and other dependencies:
+2. pip install streamlit matplotlib
+
+## Clone the Repository
+```
+git clone https://github.com/yourusername/cryptanalysis-tool.git cd cryptanalysis-tool
+```
+
+# Usage
+## Run the Application
+1. To start the Streamlit app, run:
+```
+streamlit run cryptanalysis_tool.py
+```
+
+# Instructions
+
+1. Select a cipher from the dropdown menu.
+
+2. Enter the ciphertext in the provided text area.
+
+3. For certain ciphers, additional inputs like keys may be required.
