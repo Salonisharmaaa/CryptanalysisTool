@@ -1,2 +1,4 @@
 stremlit
-matplotlib
+numpy
+pandas
+matplotlib==3.5.3
